@@ -1,0 +1,67 @@
+body,
+html,
+section {
+  width: 100%;
+  height: 100%;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); */
+  background-color: #fff;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  /* -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); */
+  background-color: #ccc;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #ccc;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.step-wrap {
+  position: relative;
+  padding: 0 0 0 20px;
+  width: 100%;
+  height: 450px;
+}
+
+.step-content {
+  padding: 60px 0 0 0;
+  display: flex;
+}
+
+.step-content>div {
+  width: 100%;
+}
+
+.step-options {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
